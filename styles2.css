@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+/* mobile mode */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-image: url(images/mobile/image-map@2x.png);
+    background-size:375px 550px ;
+    background-repeat: no-repeat;
+}
+
+button {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0;
+    border: none;
+}
+
+.button_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.arrow_left {
+    display: flex;
+    align-items: center;
+    background-color: #D5966C;
+    width: 56px;
+    height: 72px;
+    
+}
+
+button img {
+    display: block;
+    width: 8px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Big Shoulders Display';
+    color: white;
+    background-color: #151515;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.5px;
+    width: 264px;
+    height: 72px;
+    justify-content: space-between;
+}
+
+button:hover a {
+    background-color: #D5966C;
+}
+
+button:hover .arrow_left {
+    background-color: #151515;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 493px;
+    background-color: #151515;
+    padding: 48px 16px 56px 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 343px;
+    height: 45px;
+    font-family: 'Big Shoulders Display';
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+    color: white;
+}
+
+h2 {
+    width: 343px;
+    height: 32px;
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 32px;
+    color: #D5966C;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+pre {
+    width: 343px;
+    height: 84px;
+    font-family: 'Outfit';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+ p {
+    width: 343px;
+    height: 140px;
+    font-family: 'Outfit';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+ }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    height: 336px;
+    background-color: #D5966C;
+    padding: 48px 32px 48px 32px;
+    box-sizing: border-box;
+}
+
+.footer_img {
+    width: 110px;
+    height: 40px;
+    filter: invert(99%) sepia(7%) saturate(99%) hue-rotate(337deg) brightness(99%) contrast(99%);
+}
+
+.footer_p {
+    width: 311px;
+    height: 104px;
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+}
+
+.footer_icons img {
+    filter: invert(99%) sepia(7%) saturate(99%) hue-rotate(337deg) brightness(99%) contrast(99%);
+}
+
+.footer_icons, h1, h2, p :hover {
+    cursor: pointer;
+}
+
+/* tablet mode */
+@media screen and (min-width:768px) {
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    max-width: 768px;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    background-image: url(images/tablet/image-map@2x.png);
+    background-size: 768px 600px;
+}
+
+button {
+    left: 39px;
+}
+
+section{
+    flex-direction: row;
+    height: 436px;
+    padding: 88px 40px 80px 40px;
+}
+
+h1{
+    width: 223px;
+    height: 100px;
+    font-size: 55px;
+    line-height: 50px;
+    margin-right: 68px;
+}
+
+h2 {
+    width: 350px;
+    height: 32px;
+    margin-top: 0px;
+}
+
+pre{
+    width: 398px;
+}
+
+p {
+    width: 398px;
+    height: 112px;
+}
+
+footer {
+    flex-direction: row;
+    height: 216px;
+    padding: 56px 40px 56px 40px;
+}
+
+.footer_p {
+    margin: 0px 110px 0px 65px;
+}
+}
+
+/* desktop mode */
+@media screen and (min-width:1440px) {
+main {
+    max-width: 1440px;
+}
+
+.map {
+    width: 1440px;
+    height: 685px;
+    background-image: url(images/desktop/image-map@2x.png);
+    background-size: 1440px 685px;
+}
+
+button {
+    margin-left: 120px;
+}
+
+section {
+    height: 548px;
+    padding: 104px 165px 128px 165px;
+}
+
+h1 {
+    width:350px;
+    height: 140px;
+    margin-right: 220px;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+h2 {
+    width: 350px;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+pre {
+    width: 445px;
+    height: 96px;
+    font-size: 22px;
+    line-height: 32px
+}
+
+p {
+    width: 540px;
+    height: 128px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+footer {
+    height: 244px;
+    padding: 80px 165px 80px 164px;
+
+}
+
+.footer_img {
+    width: 180px;
+    height: 78px;
+}
+
+.footer_p {
+    width: 430px;
+    height: 84px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 280px;
+    margin-left: 100px;
+}
+
+.footer_icons img:hover {
+    filter: invert(0%) sepia(0%) saturate(725%) hue-rotate(339deg) brightness(91%) contrast(82%);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
